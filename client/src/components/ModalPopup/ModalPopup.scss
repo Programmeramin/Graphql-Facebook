@@ -1,0 +1,56 @@
+.modal-popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    background-color: rgba(255, 255, 255, .8);
+
+    .modal-popup-container{
+        width: 440px;
+        height: auto;
+        background-color: #fff;
+        box-shadow: var(--fb-shadow);
+        border-radius: 10px;
+
+        .modal-popup-header{
+            padding: 10px 16px;
+            display: flex;
+            justify-content: space-between;
+
+
+            .header-content{
+                h2{
+                    font-size: 32px;
+                    line-height: 38px;
+                    font-family: "SFProDisplay-Regular";
+                    font-weight: 600;
+                    color: #1c1e21;
+                    letter-spacing: 1.5px;
+                }
+                p{
+                    color: #606770;
+                    font-size: 15px;
+                    line-height: 24px;
+                    font-family: "SFProDisplay-Regular";
+                    font-weight: 400;
+                }
+            }
+            button{
+                height: fit-content;
+                border: none;
+                background-color: transparent;
+                font-size: 25px;
+            }
+        }
+        .modal-popup-content{
+            border-top: 1px solid #dadde1;
+            box-sizing: border-box;
+            padding: 16px;
+        }
+    }
+}
